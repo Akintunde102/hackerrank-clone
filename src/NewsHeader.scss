@@ -1,0 +1,105 @@
+.newsHeader {
+   align-items: center;
+   background: #ff6600;
+   color: black;
+   display: flex;
+   font-size: 10pt;
+   padding: 2px;
+}
+
+.newsHeader_logo {
+   border:  1px solid white;
+   flex-basis:  18px;
+   height:  18px;
+}
+
+.newsHeader_textLink {
+   color:  black;
+   text-decoration:  none;
+    margin: 1px 2px 2px 4px;
+}
+
+.newsHeader_title{
+   font-weight: bold;
+   margin-left: 4px;
+}
+
+.newsHeader_nav {
+    flex-grow: 1;
+    margin-left: 10px;
+ }
+ 
+ .newsHeader_navLink:not(:first-child)::before{
+    content: '|';
+    margin-right: 4px;
+ }
+ 
+ .newsHeader-login {
+    margin-right: 5px;
+  }
+
+  .newsItem_itemText {
+    flex-grow: 1;
+  }
+  
+  .newsItem_domain {
+    font-size: 8pt;
+    margin-left: 5px;
+  }
+  
+  .newsItem_domain > a {
+    color: #828282;
+    text-decoration: none;
+  }
+
+
+
+  .newsItem_rank {
+    flex-basis: 25px;
+    font-size: 10pt;
+    text-align: right;
+  }
+  
+  .newsItem_vote {
+    flex-basis: 15px;
+    text-align: center;
+  }
+  
+  .newsItem_subtext {
+    font-size: 8pt;
+    padding-left: 10pt;
+  }
+  
+  .newsItem_subtext > a {
+    color: #828282;
+    text-decoration: none;
+  }
+
+  .newsItem_subtext a:link, .subtext a:visited {
+    color: #828282;
+}
+
+  
+  .newsItem_subtext > a:hover {
+    text-decoration: underline;
+  }
+
+  .newsList {
+    background: #f6f6ef;
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+  }
+
+  ol.newsList_newsItem{
+    padding-left: 11pt;
+
+    li {
+      display: list-item;
+      list-style-position: outside;
+    }
+
+    img {
+      padding: 1pt;
+    }
+  }
